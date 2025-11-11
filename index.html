@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Pixel Video (Draft Implementation)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.49/build/Tone.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      #ui {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+        display: block;
+      }
+      button {
+        margin-top: 10px;
+        width: 150px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #444;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #666;
+      }
+      small {
+        display: block;
+        margin-top: 8px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ui">
+      <h3>Custom Pixel MV</h3>
+      <link rel="icon" href="data:,">
+      <button id="startBtn">Start ▶ </button><br />
+      <button id="switchBtn">Switch Mode</button><br />
+      <small>Press <b>SPACE</b> to pause</small>
+    </div>
+  </body>
+</html>
